@@ -12,7 +12,7 @@
 
 </style>
 <body>
-<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 
 var width = 960,
@@ -25,7 +25,7 @@ var svg = d3.select("body").append("svg")
 var force = d3.layout.force()
     .size([width, height]);
 
-d3.csv("graph.csv", function(error, links) {
+d3.csv("./graph.csv", function(error, links) {
   if (error) throw error;
 
   var nodesByName = {};
